@@ -1,14 +1,17 @@
 onload=principal; //carga el html
 
 function principal(){
-    let n = prompt("Introduce un numero");
-    console.log("Has elegido el número: "+n);
-    let res = Math.floor(Math.random() * 11);
-    while (n != res){    
-        n = prompt("Fallaste, el número que debías adivinar era: "+res +" Introduce otro número", 0);
-        res = Math.floor(Math.random() * 11);
+    let num = prompt("Introduce un número"); //variable para número que se escribe
+    
+    let adiv = Math.floor(Math.random() * 11); //variable para un numero aleatorio
+
+    while (num != adiv){    
+        if (num > adiv){
+            num = prompt("El número a adivinar es menor")
+        }else if (num < adiv){
+            num = prompt("El número a adivinar es mayor")
+        }        
     }
     alert("Has acertado")
+    principal();
 }
-
-
