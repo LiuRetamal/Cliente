@@ -1,22 +1,28 @@
-onload = crearTabla;
+function crearParrafo(){
+    let divParrafos = document.getElementById('parrafos');
 
-//alert(document.URL)
-//alert(document.doctype.valueOf())
+    let parr = document.createElement("p");
+    let nTexto = document.createTextNode("hola");
 
-function crearTabla(){
-    let cuerpo = document.body;
+    parr.appendChild(nTexto);
 
-    let tabla = "<table><tr><td>Hola</td></tr><tr><td>Adios</td></tr></table>";
+    divParrafos.appendChild(parr);
+}
 
-    let imagen = "<img src='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.elmundo.es%2Fviajes%2Famerica%2F2022%2F03%2F15%2F622885af21efa0f9518b45c4.html&psig=AOvVaw2N1KwbeWrXbi6NJ0H-cMK1&ust=1664884487283000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCKjGys3_w_oCFQAAAAAdAAAAABAD'>";
+function crearEnlace(){
+    //recuperar elemento padre del nuevo elemento
+    let divEnlaces = document.getElementById('enlaces');
 
-    let contenido = tabla + imagen;
+    //crear el nuevo elemento con sus atriutos, valores, estilos
+    let enlace = document.createElement("a");
+    enlace.setAttribute("href", "https://www.google.es");
 
-    cuerpo.innerHTML= contenido;
+    let nTexto = document.createTextNode("ir a google");
+    enlace.appendChild(nTexto);
 
-    let parrafo = document.createElement("p");
-
-    parrafo.innerHTML = "texto";
-
-    cuerpo.appendChild(parrafo);
+    divEnlaces.appendChild(enlace);
+    
+    //añadir el elemento nuevo a su padre
+    let sl = document.createElement("<br>")
+    divEnlaces.appendChild(sl);
 }

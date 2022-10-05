@@ -1,8 +1,21 @@
+onload=iniciar;
 let texto =""; //ambito global
+
+let datoUsuario;
+let salida;
+let numero;
+
+function iniciar(){
+    //recuperar objetos del DOM (elementos o nodos)
+    datoUsuario = document.getElementById("valores");
+    salida = document.getElementById("salida");
+    numero = document.getElementById("numero");
+}
+
 function arraysBasico (){
     //recuperar objetos del DOM (elementos o nodos)
-    let datoUsuario = document.getElementById("valores");
-    let salida = document.getElementById("salida");
+    datoUsuario = document.getElementById("valores");
+    salida = document.getElementById("salida");
 
     let listaNum = datoUsuario.value.split(" ");
     
@@ -22,4 +35,23 @@ function arraysBasico (){
 
 function suma2(value){
     texto += (parseInt(value) + 2) + "<br>";
+}
+
+function arrayToString(){
+    salida.innerHTML = datoUsuario.value.split(" ").toString();
+}
+
+function arrayJoin(){
+    salida.innerHTML = datoUsuario.value.split(" ").join(numero.value);
+}
+function arrayPop(){
+    let lista = datoUsuario.value.split(" ");
+    lista.pop();
+    salida.innerHTML = lista.join("-");
+}
+function arrayPush(){
+    let lista = datoUsuario.value.split(" ");
+    lista.push(numero.value);
+    salida.innerHTML = lista.join("-");
+    
 }
