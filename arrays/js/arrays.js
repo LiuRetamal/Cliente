@@ -55,3 +55,36 @@ function arrayPush(){
     salida.innerHTML = lista.join("-");
     
 }
+function ordenarNormal(){
+    let lista = datoUsuario.value.split(" ");
+    lista.sort();
+    salida.innerHTML = lista.join("-");
+}
+function ordenarNormalReverse(){
+    let lista = datoUsuario.value.split(" ");
+    lista.sort().reverse();
+    salida.innerHTML = lista.join("-");
+}
+function ordenarNumericamente(){
+    
+    if(a<50){
+        return 1;
+    }else{
+        return -1;
+    }
+}
+function arrayForEach(){
+    let lista = datoUsuario.value.split(" ");
+    lista.forEach(pasaEntero);
+}
+function pasaEntero(value, index, array){
+    salida.innerHTML += value + "-" + index + ":";
+    
+    return parseInt(value);
+}
+
+function arrayMap(){
+    const lista = datoUsuario.value.split(" ");
+    const nuevaLista = lista.map(pasaEntero);
+    console.log(nuevaLista);
+}

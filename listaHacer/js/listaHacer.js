@@ -1,6 +1,6 @@
 
 function crearTr(){
-    
+
     const contenedor = document.getElementById("resultado");
  
     const tabla = document.createElement("table");
