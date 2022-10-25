@@ -1,0 +1,16 @@
+.tablero{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content:center;
+    gap: 2rem;
+}
+.tablero > div{   
+    width: 220px; 
+    height: 220px;
+}
+.tablero > div >img{
+    padding:1rem;
+    border-radius:3rem;
+    box-shadow: 14px 14px 28px grey, 
+                -14px -14px 28px coral;
+}
