@@ -1,11 +1,9 @@
 #!C:\Users\zx21student035\AppData\Local\Microsoft\WindowsApps\python
 
-import cgi
-
-args = cgi.parse()
-
-n = int(args['num'][0])
+import json
 
 print("Content-Type: text/plain\n")
 
-print("hola...",n*2)
+n=2.0
+
+print(json.dumps(n))

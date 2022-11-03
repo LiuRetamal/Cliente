@@ -1,0 +1,55 @@
+/*GENERAL*/
+:root{
+    --primario: blueviolet;
+    --primarioClaro: lavender;
+    --secundario: lightpink;
+    --fuente: 'Courier New', Courier, monospace;
+}
+html{
+    box-sizing: border-box;/*Hack Box Model*/
+    scroll-snap-type: y mandatory;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;/*Predeterminar medidas para padding*/
+}
+
+body{
+    background-color: var(--primarioClaro);
+    font-family: var(--fuente);
+    text-align: center;
+    margin-top: 4rem;
+}
+
+/*************************************************************************************************/
+
+/*BOTÓN*/
+button{
+    background-color: var(--secundario);
+    color: var(--primario);    
+    border: 2px solid var(--primario);
+    font-family: var(--fuente);
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 15rem;
+    width: 20rem;
+    height: 2rem;
+    cursor: pointer;
+}
+button:hover{
+    background-color: var(--primario);
+    color: var(--primarioClaro);
+}
+
+/*IMAGEN*/
+img{
+    border: 2px solid var(--primario);
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    background-color: var(--secundario);
+}
+
+/*TEXTO*/
+p{
+    padding: 1rem;
+}
