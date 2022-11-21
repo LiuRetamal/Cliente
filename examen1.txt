@@ -5,3 +5,6 @@ Cliente (javascript) :
 		3 o 4 ejercicios - 4pts.
 	No Escrito / PC: Dom (trabajar con elementos), ajax y canvas.
 		3 ejercicios - 6pts
+
+Ejercicio 1:
+	Se pregunta al usuario por 4 numeros usando prompts. Validar que cada numero es entero.
