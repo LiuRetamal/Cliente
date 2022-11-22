@@ -1,5 +1,49 @@
 onload = principal;
 
+function principal(){
+    let filas = 8;
+    let columnas = 8;
+    let n = "black";
+    let b = "white";
+    let x = 0;
+    let y = 0;
+    let blanco = true;
+
+    //400x400
+    let cnv = document.getElementById("canvas");
+    let ctx = cnv.getContext("2d"); //obtenemos el contexto del elemento canvas
+    
+    ctx.fillStyle = b;
+    for(var i=0; i< filas;i++){
+        for(var j=0; j<columnas;j++){
+            ctx.fillRect(x,y,50,50);
+            x += 50;
+            if(blanco){
+                ctx.fillStyle = n;
+                blanco = false;
+            }else{
+                ctx.fillStyle = b;
+                blanco = true;
+            }
+        }
+        y += 50;
+        x = 0;
+        //Si acabaste la fila pintando un cuadro blanco
+        //El primero de la siguiente fila es blanco también
+        if(blanco){
+            ctx.fillStyle = n;
+            blanco = false;
+        }else{
+            ctx.fillStyle = b;
+            blanco = true;
+        }
+    }
+}
+
+
+
+/*EJERCICIO MAL*/
+/*
 let ctx;
 
 function principal(){
@@ -105,5 +149,5 @@ function principal(){
         ctx. fillRect(300, 350, 50, 50);     
 
  
-}
+}*/
 

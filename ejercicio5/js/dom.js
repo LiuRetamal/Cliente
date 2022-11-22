@@ -1,3 +1,14 @@
+/*EJERCICIO BIEN*/
+function cambiaFondo(parrafo){
+    document.getElementById("p1").style.backgroundColor = "white";
+    document.getElementById("p2").style.backgroundColor = "white";
+    document.getElementById("p3").style.backgroundColor = "white";
+    document.getElementById(parrafo).style.backgroundColor = "lightblue";
+}
+
+
+/*EJERCICIO MAL*/
+/*
 function cambiaFondo('p1'){
     let p1 = document.getElementById('p1');
     let p2 = document.getElementById('p2');
@@ -34,3 +45,4 @@ function cambiaFondo('p3'){
     p2.appendChild(cambiaP2);
     p3.appendChild(cambiaP3);
 }
+*/

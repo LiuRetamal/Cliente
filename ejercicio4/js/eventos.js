@@ -1,5 +1,12 @@
-onload=principal;
-
+//EJERCICIO BIEN
+//Introducir texto
+//Añadir evento onchange en el html
+//Mostrar en alert el texto
+function muestra(t){
+    let inp = document.getElementsById(t).value;
+    alert(inp);
+}
+/*EJERCICIO MAL
 function principal(){
     let texto1 = document.getElementsById("texto1");
     let texto2 = document.getElementsById("texto2");
@@ -14,4 +21,4 @@ function crearAlert1(){
 }
 function crearAlert2(){
     alert(texto2)
-}
+}*/
