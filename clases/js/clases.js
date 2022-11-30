@@ -1,6 +1,5 @@
-import Persona from "./persona.js"
+let e1 = new Empleado("Jose", "García", 40 , 2000);
+let e2 = new Empleado("Ana", "García", 30, 3000);
 
-const persona1 = new Persona("Jose", "García", "24");
-const persona2 = new Persona("Ana", "García", "42");
-
-console.log(persona1.nombreCompleto()+ "-" +persona2.nombreCompleto());
+alert(e1.infoEmpleado());
+console.log(e2.infoEmpleado());
