@@ -4,10 +4,13 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ejercicio 4</title>
-		<script type="text/javascript" src="js/eventos.js"></script>	
+		<script type="text/javascript" src="js/ej4.js"></script>	
 	</head>
 	<body>
-		Texto 1: <input type="text"  id="texto1" onchange="muestra('texto1')"><br/>
-		Texto 2: <input type="text"  id="texto2" onchange="muestra('texto2')">
+		<table border="1">
+			<tr><td><input onclick="mostrar('c1')" id="c1" value="Contenido de celda 1"></td></tr>
+			<tr><td><input onclick="mostrar('c2')" id="c2" value="Contenido de celda 2"></td></tr>
+			<tr><td><input onclick="mostrar('c3')" id="c3" value="Contenido de celda 3"></td></tr>
+		</table>
     </body>
 </html>

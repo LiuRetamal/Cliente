@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Drag and Drop</title>
+    <script type="text/javascript" src="js/dad.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <table class="tabla" border="2">
+        <tr ondragover="llego(event)" ondrop="solto(event)">
+            <td id="a1" 
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">A1
+            </td>
+            <td id="b1" 
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">B1
+            </td>
+            <td id="c1"
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">C1
+            </td>
+        </tr>
+        <tr ondragover="llego(event)" ondrop="solto(event)">
+            <td id="a2" 
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">A2
+            </td>
+            <td id="b2" 
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">B2
+            </td>
+            <td id="c2"
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">C2
+            </td>
+        </tr>
+        <tr ondragover="llego(event)" ondrop="solto(event)">
+            <td id="a3" 
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">A3
+            </td>
+            <td id="b3" 
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">B3
+            </td>
+            <td id="c3"
+            draggable="true" ondragstart="arrastrando(event)"                
+            ondragend="finArrastre(event)">C3
+            </td>
+        </tr>
+    </table>
+    <table class="tabla" border="2" width="600rem" height="600px">
+        <tr id="f1" ondragover="llego(event)" ondrop="solto(event)"></tr>
+        <tr id="f2" ondragover="llego(event)" ondrop="solto(event)"></tr>
+        <tr id="f3" ondragover="llego(event)" ondrop="solto(event)"></tr>
+    </table>
+</body>
+</html>

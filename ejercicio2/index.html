@@ -5,11 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejercicio 2</title>
-    <script type=" " src="js/formulario.js"></script>
+    <script type="text" src="js/ej2.js"></script>
 </head>
 <body>
-    <form action="noExiste.php" method="get" onsubmit="return validaTexto()"> <!--ONSUBMIT- Llamar a funcion (devuelve falso)-->
-        Texto:<input type="text" id="texto" name="texto" />
+    <!-- <form action="noExiste.php" method="get" onsubmit="return validaTexto()"> <!--ONSUBMIT- Llamar a funcion (devuelve falso)-->
+        <!-- Texto:<input type="text" id="texto" name="texto" />
+        <input type="submit" value="envia">
+    </form> --> 
+    <form action="noExiste.php" method="post" onsubmit="return validaDatos()">
+        Texto: <input type="text" name="texto" id="tex"><br>
+        Número: <input type="text" name="numero" id="num"><br>
         <input type="submit" value="envia">
     </form>
 </body>

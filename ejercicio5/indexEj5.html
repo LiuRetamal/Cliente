@@ -2,10 +2,18 @@
 <html>
     <head>
         <title>Ejercicio 5</title>
-        <script src="dom.js"></script>
+        <script type="text/javascript" src="js/ej5.js"></script>
     </head>
     <body>
-        <button onclick="cambiaFondo('p1')">Resalta Juan</button> 
+        <button onclick="ponerBorde('parrafo')">Poner borde</button>
+		<button onclick="quitarBorde('parrafo')">Quitar borde</button>
+		Ancho borde: <input type="text" id="ancho" value="2">
+		<p id="parrafo">
+			En un lugar de La Mancha<br />
+			De cuyo nombre no quiero acordarme<br />
+			No ha mucho tiempo que vivía un hidalgo<br />
+        </p>
+        <!-- <button onclick="cambiaFondo('p1')">Resalta Juan</button> 
         <button onclick="cambiaFondo('p2')">Resalta Carlos</button> 
         <button onclick="cambiaFondo('p3')">Resalta Maria</button> 
         <p id="p1">
@@ -25,6 +33,6 @@
             Apellidos: Sánchez Sánchez <br />
             Dirección: Calle Tomillo, 45, 1A <br />
             CP: 43678
-        </p>
+        </p> -->
     </body>
 </html>
