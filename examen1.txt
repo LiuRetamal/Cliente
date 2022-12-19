@@ -1,8 +1,0 @@
-Cliente (javascript) :
-
-	Escrito: promt, arlert, tipos datos (escalares y complejos), 
-		validar formularios, eventos y funciones asociadas a eventos.
-		3 o 4 ejercicios - 4pts.
-	No Escrito / PC: Dom (trabajar con elementos), ajax y canvas.
-		3 ejercicios - 6pts
-
