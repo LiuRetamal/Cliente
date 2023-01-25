@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX - ASP - JQUERY</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body{
+            background-color: lightcoral;
+            text-align: center;
+            padding: 1rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button{
+            border: 2px solid black;
+            text-transform: uppercase;
+            font-weight:600;
+            height: 50px ;
+            border-radius: 2rem;
+            color: coral;
+        }
+        label{
+            font-weight: bold;
+        }
+        input{
+            max-width: 20rem;
+            text-align: center;
+            margin: 0 auto;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registro de Partidos</h1>
+    <div class="container mt-3">
+        <form>
+            <div class="mb-3 mt-3">
+                <label for="Equiplocal" class="form-label">Equipo local:</label>
+                <input type="text" class="form-control" id="EquipLocal" placeholder="Equipo Local">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="EquipVisitante" class="form-label">Equipo Visitante:</label>
+                <input type="text" class="form-control" id="EquipVisitante" placeholder="Equipo Visitante">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="GolesLocal" class="form-label">Goles Local:</label>
+                <input type="text" class="form-control" id="GolesLocal" placeholder="Goles Local">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="GolesVisitante" class="form-label">Goles Visitante:</label>
+                <input type="text" class="form-control" id="GolesVisitante" placeholder="Goles Visitante">
+            </div>
+            <button type="button" id="btnER" class="mb-3 mt-3">Enviar Resultado</button>
+            <button type="button" id="btnMR" class="mb-3 mt-3" disabled>Modificar Resultado</button>
+            <button type="button" id="btnDL" class="mb-3 mt-3" disabled>Borrar Resultado</button>
+            <button type="button" id="btnLF" class="mb-3 mt-3">Limpiar Resultado</button>
+        </form>
+        <hr>
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Equipo Local</th>
+                    <th>Equipo Visitante</th>
+                    <th>Goles Local</th>
+                    <th>Goles Visitante</th>
+                </tr>
+            </thead>
+            <tbody id="tablaCuerpo">
+            </tbody>
+        </table>
+    </div>
+   
+
+    <!-- Poner scripts abajo para no poner onload principal -->
+    <script type="text/javascript" src="js/jquery-3.6.1.js"></script>
+    <script type="text/javascript" src="js/principal.js"></script>
+</body>
+</html>

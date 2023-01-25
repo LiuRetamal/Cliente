@@ -9,96 +9,54 @@
     <title>Buscar Parejas</title>
     <style>
         body{
-            background-color: lightcoral;
+            background-color: lightcoral;            
+            padding: 2rem;
         }
         #card-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        gap: 16px;
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-rows: repeat(2, 1fr);
+          gap: 10rem;
+          width: 90%;
+          margin: 0 auto;
         }
-
-        .card {
-        position: relative;
-        width: 100%;
-        height: 100%;
+        .card {          
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 100%;
+          border: 3px solid black;
+          background-color: white;
+          border-radius: 10%;
         }
-
-        .card-front, .card-back {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        backface-visibility: hidden;
+        .card img{
+          max-width: 60%;          
+          height: auto;
         }
-
-        /* Aqui se define como se ve la cara frontal */
-        .card-front {
-        background-color: #ccc;
-        }
-        /* Aqui se define como se ve la cara trasera */
-        .card-back {
-        background-color: #fff;
-        transform: rotateY(180deg);
-        }
-
-
     </style>
 </head>
 <body>
         <div id="card-container">
-            <div class="card">
-              <div class="card-front">
-                <img src="imagen1.jpg" alt="Card Image" width="100">
-              </div>
-              <div class="card-back">
-                <img src="back.jpg" alt="Card Back">
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-front">
-                <img src="imagen2.jpg" alt="Card Image" width="100">
-              </div>
-              <div class="card-back">
-                <img src="back.jpg" alt="Card Back">
-              </div>
-            </div>
-            <div class="card">
-                <div class="card-front">
-                  <img src="imagen1.jpg" alt="Card Image" width="100">
-                </div>
-                <div class="card-back">
-                  <img src="back.jpg" alt="Card Back">
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-front">
-                  <img src="imagen2.jpg" alt="Card Image" width="100">
-                </div>
-                <div class="card-back">
-                  <img src="back.jpg" alt="Card Back">
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-front">
-                  <img src="imagen1.jpg" alt="Card Image" width="100">
-                </div>
-                <div class="card-back">
-                  <img src="back.jpg" alt="Card Back">
-                </div>
-              </div>
-              <div class="card">
-                <div class="card-front">
-                  <img src="imagen2.jpg" alt="Card Image" width="100">
-                </div>
-                <div class="card-back">
-                  <img src="back.jpg" alt="Card Back">
-                </div>
-              </div>
-            <!-- repeat for a total of 6 cards -->
+          <div class="card">
+            <img src="imagen1.jpg" alt="Card Image" id="img1" onclick="voltear()">
           </div>
-          
-          
+          <div class="card">
+            <img src="imagen1.jpg" alt="Card Image" id="img2" onclick="voltear()">
+          </div>
+          <div class="card">
+            <img src="imagen1.jpg" alt="Card Image" id="img3" onclick="voltear()">
+          </div>
+          <div class="card">
+            <img src="imagen1.jpg" alt="Card Image" id="img4" onclick="voltear()">
+          </div>
+          <div class="card">
+            <img src="imagen1.jpg" alt="Card Image" id="img5" onclick="voltear()">
+          </div>
+          <div class="card">
+            <img src="imagen1.jpg" alt="Card Image" id="img6" onclick="voltear()">
+          </div>
+        </div>
 </body>
 </html>
